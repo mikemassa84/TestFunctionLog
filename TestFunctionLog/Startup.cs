@@ -35,8 +35,6 @@ namespace TestFunctionLog
             {
                 loggingBuilder.AddNLog(new NLogProviderOptions() { AutoShutdown = true, ShutdownOnDispose = true, RemoveLoggerFactoryFilter = true });
             });
-
-            builder.Services.AddScoped<ILogger, Logger>();
         }
     }
 }
